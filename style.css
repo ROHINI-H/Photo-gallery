@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Rye&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+header {
+    /* border: 2px solid black; */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+p {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
