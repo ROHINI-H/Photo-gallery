@@ -12,6 +12,9 @@
     <title>Photo Gallery</title>
     <link rel="icon" href="images/logo.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -22,28 +25,32 @@
     <main>
         <section>
             <article class="container">
-                <img src="images/Sakura-1.jpg" alt="sakura flower" loading="lazy">
-                <img src="images/Sakura-2.jpg" alt="sakura flower" loading="lazy">
-                <img src="images/Sakura-3.jpg" alt="sakura flower" loading="lazy">
-                <img src="images/Sakura-4.jpg" alt="sakura flower" loading="lazy">
-                <img src="images/Sakura-5.jpg" alt="sakura flower" loading="lazy">
-                <img src="images/Sakura-6.jpg" alt="sakura flower" loading="lazy">
-                <img src="images/image-1.jpg" alt="flower" loading="lazy">
-                <img src="images/image-2.jpg" alt="flower" loading="lazy">
-                <img src="images/image-3.jpg" alt="flower" loading="lazy">
-                <img src="images/image-4.jpg" alt="flower" loading="lazy">
-                <img src="images/image-5.jpg" alt="flower" loading="lazy">
-                <img src="images/image-6.jpg" alt="flower" loading="lazy">
-                <img src="images/image-7.jpg" alt="flower" loading="lazy">
-                <img src="images/image-8.jpg" alt="flower" loading="lazy">
-                <img src="images/image-9.jpg" alt="flower" loading="lazy">
-                <img src="images/image-10.jpg" alt="flower" loading="lazy">
-                <img src="images/image-11.jpg" alt="flower" loading="lazy">
-                <img src="images/image-12.jpg" alt="flower" loading="lazy">
-                <img src="images/image-13.jpg" alt="flower" loading="lazy">
-                <img src="images/image-14.jpg" alt="flower" loading="lazy">
-                <img src="images/image-15.jpg" alt="flower" loading="lazy">
+                <img src="images/Sakura-1.jpg" alt="sakura flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/Sakura-2.jpg" alt="sakura flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/Sakura-3.jpg" alt="sakura flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/Sakura-4.jpg" alt="sakura flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/Sakura-5.jpg" alt="sakura flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/Sakura-6.jpg" alt="sakura flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-1.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-2.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-3.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-4.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-5.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-6.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-7.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-8.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-9.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-10.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-11.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-12.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-13.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-14.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
+                <img src="images/image-15.jpg" alt="flower" loading="lazy" onclick="displayimage(this.src)">
             </article>
+            <div id="displayArea" class="modal" onclick="closeImage()">
+                <span class="close">X</span>
+                <img class="imgContent" id="showimage">
+            </div>
         </section>
     </main>
 </body>
