@@ -8,7 +8,7 @@
 
 /* Header Section */
 header {
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -47,26 +47,50 @@ img {
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 10;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
 }
 
 .imgContent {
-  max-width: 90%;
-  max-height: 80%;
+    max-width: 90%;
+    max-height: 80%;
 }
 
 .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Filter Area */
+.filter {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.filter button {
+    border: 2px solid rgb(247, 250, 250);
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    background-color: rgb(3, 128, 169);
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: rgb(112, 209, 241);
+    color: rgb(44, 5, 5);
 }
