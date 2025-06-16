@@ -19,3 +19,8 @@ function filterImg(category) {
         }
     });
 }
+
+function darkmode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
